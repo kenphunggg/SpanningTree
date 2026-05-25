@@ -1,0 +1,21 @@
+<scenario>
+    <!-- 
+      Tại giây 50: "Cắt" cáp giữa sw1 và sw2.
+      - sw1.ethg[0] nối với sw2.ethg[0]. 
+      - Bằng cách vô hiệu hóa kênh (disabled="true") cả 2 chiều, chúng ta giả lập cáp quang bị đứt.
+    -->
+    <at t="50">
+        <set-channel-param src-module="sw1" src-gate="ethg$o[0]" par="disabled" value="true" />
+        <set-channel-param src-module="sw2" src-gate="ethg$o[0]" par="disabled" value="true" />
+    </at>
+
+    <!-- 
+      Tại giây 150: "Nối" lại cáp.
+      - Cáp được khôi phục (disabled="false").
+      - Bạn sẽ thấy STP lại một lần nữa cấu hình lại cổng bị Block (nó sẽ khóa cổng giữa sw3 và sw4 lại như ban đầu).
+    -->
+    <at t="150">
+        <set-channel-param src-module="sw1" src-gate="ethg$o[0]" par="disabled" value="false" />
+        <set-channel-param src-module="sw2" src-gate="ethg$o[0]" par="disabled" value="false" />
+    </at>
+</scenario>
