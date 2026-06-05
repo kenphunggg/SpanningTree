@@ -4,17 +4,17 @@
         <set-channel-param src-module="sw2" src-gate="ethg$o[0]" par="disabled" value="true" />
     </at>
 
-    <at t="65">
+    <at t="75">
         <set-channel-param src-module="sw1" src-gate="ethg$o[0]" par="disabled" value="false" />
         <set-channel-param src-module="sw2" src-gate="ethg$o[0]" par="disabled" value="false" />
     </at>
 
-    <at t="80">
+    <at t="95">
         <set-channel-param src-module="sw1" src-gate="ethg$o[0]" par="disabled" value="true" />
         <set-channel-param src-module="sw2" src-gate="ethg$o[0]" par="disabled" value="true" />
     </at>
 
-    <at t="120">
+    <at t="150">
         <set-channel-param src-module="sw1" src-gate="ethg$o[0]" par="disabled" value="false" />
         <set-channel-param src-module="sw2" src-gate="ethg$o[0]" par="disabled" value="false" />
     </at>
