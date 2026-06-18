@@ -1,0 +1,53 @@
+# OMNeT++ generated build output
+/out/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.pdb
+*.idb
+*.manifest
+
+# Generated OMNeT++ source and build metadata
+Makefile
+Makefile.inc
+*_m.cc
+*_m.h
+*_sm.cc
+*_sm.h
+compile_commands.json
+.oppfeaturestate
+.nedexclusions
+
+# Simulation output and result indexes
+**/results/
+*.sca
+*.vec
+*.vci
+*.elog
+*.log
+*.out
+
+# Local OMNeT++ / Eclipse state
+.metadata/
+.settings/
+.qtenvrc
+.qtenv.ini
+.tkenvrc
+.tkenvlog
+.cmdenv-log
+.ccls-cache/
+.vscode/
+
+# OS and editor temporary files
+.DS_Store
+Thumbs.db
+*.bak
+*.old
+*.orig
+*.rej
+*~
