@@ -1,0 +1,10 @@
+<scenario>
+    <!--
+      sw2 được ép làm Root Bridge trong các config thí nghiệm.
+      Root bị tắt tại 100s và giữ trạng thái hỏng đến hết mô phỏng.
+      host1 và host2 nối với sw1/sw3 nên vẫn còn đường vật lý thay thế.
+    -->
+    <at t="100s">
+        <shutdown module="sw2"/>
+    </at>
+</scenario>

@@ -1,0 +1,15 @@
+<scenario>
+    <!--
+      Làm đứt liên kết sw1 <-> sw2 tại 100s và khôi phục tại 160s.
+      Cổng [0] được giữ giống nhau trong cả STPRingNetwork và STPComplexNetwork.
+    -->
+    <at t="100s">
+        <set-channel-param src-module="sw1" src-gate="ethg$o[0]" par="disabled" value="true"/>
+        <set-channel-param src-module="sw2" src-gate="ethg$o[0]" par="disabled" value="true"/>
+    </at>
+
+    <at t="160s">
+        <set-channel-param src-module="sw1" src-gate="ethg$o[0]" par="disabled" value="false"/>
+        <set-channel-param src-module="sw2" src-gate="ethg$o[0]" par="disabled" value="false"/>
+    </at>
+</scenario>
